@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  printer_name: MyString
+  total_pages: 1
+  black_pages: 1
+  colour_pages: 1
+  last_check: 2011-10-27
+
+two:
+  printer_name: MyString
+  total_pages: 1
+  black_pages: 1
+  colour_pages: 1
+  last_check: 2011-10-27

@@ -1,0 +1,28 @@
+<div class="page-header">
+	<h2>Total</h2>
+</div>
+<div class="row">
+
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Black pages</th>
+				<th>Colour pages</th>
+			</tr>
+		</thead>
+		<% @stats.each do |printer| %>
+		<tbody>
+			<tr>
+				<td><%= printer.printer_name %></td>
+				<td><%= number_with_delimiter(printer.black_pages) %></td>
+				<td><%= number_with_delimiter(printer.colour_pages) %></td>
+			</tr>
+		</tbody>
+
+		
+		<% end %>
+	</table>
+	
+</div>
+	

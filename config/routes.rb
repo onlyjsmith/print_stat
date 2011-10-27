@@ -1,4 +1,5 @@
 PrintStat::Application.routes.draw do
+  root :to => 'stats#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
