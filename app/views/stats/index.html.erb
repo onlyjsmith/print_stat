@@ -1,24 +1,26 @@
 <div class="page-header">
-	<h2>Total</h2>
+	<h2>Totals at different points in time</h2>
 </div>
 <div class="row">
 
 	<table>
 		<thead>
 			<tr>
+				<th>Date</th>
 				<th>Name</th>
 				<th>Black pages</th>
 				<th>Colour pages</th>
 				<th>Total pages</th>
 			</tr>
 		</thead>
-		<% @stats.each do |printer| %>
+		<% @stats.each do |stat| %>
 		<tbody>
 			<tr>
-				<td><%= printer.printer_name %></td>
-				<td><%= number_with_delimiter(printer.black_pages) %></td>
-				<td><%= number_with_delimiter(printer.colour_pages) %></td>
-				<td><%= number_with_delimiter(printer.black_pages + printer.colour_pages) %></td>
+				<td><%= stat.last_check.strftime('%e %b %Y') %>(<%= stat.last_check.strftime('%H:%M:%S') %>)</td>
+				<td><%= stat.printer_name %></td>
+				<td><%= number_with_delimiter(stat.black_pages) %></td>
+				<td><%= number_with_delimiter(stat.colour_pages) %></td>
+				<td><%= number_with_delimiter(stat.black_pages + stat.colour_pages) %></td>
 			</tr>
 		</tbody>
 

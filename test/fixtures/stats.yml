@@ -1,15 +1,43 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  printer_name: MyString
-  total_pages: 1
-  black_pages: 1
-  colour_pages: 1
-  last_check: 2011-10-27
+  printer_name: fennel
+  total_pages: 
+  black_pages: 10
+  colour_pages: 10
+  last_check: 2011-09-27 09:48
 
 two:
-  printer_name: MyString
-  total_pages: 1
-  black_pages: 1
-  colour_pages: 1
-  last_check: 2011-10-27
+  printer_name: gooseberry
+  total_pages: 
+  black_pages: 10
+  colour_pages: 10
+  last_check: 2011-09-27 09:48
+  
+three:
+  printer_name: fennel
+  total_pages: 
+  black_pages: 10
+  colour_pages: 10
+  last_check: 2011-09-28 09:48
+
+four:
+  printer_name: gooseberry
+  total_pages: 
+  black_pages: 10
+  colour_pages: 10
+  last_check: 2011-09-28 09:48
+  
+five:
+  printer_name: fennel
+  total_pages: 
+  black_pages: 10
+  colour_pages: 10
+  last_check: 2011-09-28 09:48
+
+six:
+  printer_name: gooseberry
+  total_pages: 
+  black_pages: 10
+  colour_pages: 10
+  last_check: 2011-09-28 09:48
