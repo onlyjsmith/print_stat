@@ -9,6 +9,7 @@
 				<th>Name</th>
 				<th>Black pages</th>
 				<th>Colour pages</th>
+				<th>Total pages</th>
 			</tr>
 		</thead>
 		<% @stats.each do |printer| %>
@@ -17,6 +18,7 @@
 				<td><%= printer.printer_name %></td>
 				<td><%= number_with_delimiter(printer.black_pages) %></td>
 				<td><%= number_with_delimiter(printer.colour_pages) %></td>
+				<td><%= number_with_delimiter(printer.black_pages + printer.colour_pages) %></td>
 			</tr>
 		</tbody>
 
